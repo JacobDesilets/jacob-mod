@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "jacobmod",
+	"version": "${version}",
+	"name": "Jacob Mod",
+	"description": "This is JACOB MOD!",
+	"authors": [
+		"JACOB"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/jacobmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.jacob.jacobmod.JacobMod"
+		],
+		"client": [
+			"net.jacob.jacobmod.JacobModClient"
+		],
+		"fabric-datagen": [
+			"net.jacob.jacobmod.JacobModDataGenerator"
+		]
+	},
+	"mixins": [
+		"jacobmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
